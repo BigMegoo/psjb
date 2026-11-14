@@ -13,13 +13,13 @@
                 <span class="Zone-title">Zone</span>
             </h1>
             <div class="subtitle"> Ps4 Exploit Host</div>
-            <div class="version-badge">FW 5.05 - 13.52</div>
+            <div class="version-badge">FW 5.05 - 14.02</div>
         </header>
 
         <hr class="separator">
 
         <div class="status-bar">
-            <span id="msgs" class="status-text loading">⏳ Loading GoldHEN v2.4b18.12... Please Wait</span>
+            <span id="msgs" class="status-text loading">⏳ Loading GoldHEN v2.4b18.14... Please Wait</span>
         </div>
 
         <footer>
@@ -64,6 +64,14 @@
                 } else if (fwNum >= 11.50 && fwNum <= 13.52) {
                     msgs.innerHTML = "Installing Cache for FW " + fwVersion + "...";
                     setTimeout(function() { window.location.replace("cacheslopkit.html"); }, 500);
+                } else {
+				   } else if (fwNum >= 11.00 && fwNum <= 14.00) {
+                    msgs.innerHTML = "Installing Cache for FW " + fwVersion + "...";
+                    setTimeout(function() { window.location.replace("https://bigmegoo.github.io/14"); }, 500);
+                } else {
+				   } else if (fwNum >= 5.05 && fwNum <= 14.02) {
+                    msgs.innerHTML = "Installing Cache for FW " + fwVersion + "...";
+                    setTimeout(function() { window.location.replace("https://bigmegoo.github.io/1402"); }, 500);
                 } else {
                     msgs.innerHTML = 'Unsupported Firmware: <span style="color: red;">' + fwVersion + '</span>';
                     msgs.className = "status-text error";
