@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Big Megoo Gamer Zone 01003810764 - تعديل سوفت من 5.05-14.02</title>
+    <title>Big Megoo Gamer Zone 01003810764 - تعديل سوفت من 5.05-13.52</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -65,18 +65,7 @@
                     msgs.innerHTML = "Installing Cache for FW " + fwVersion + "...";
                     setTimeout(function() { window.location.replace("cacheslopkit.html"); }, 500);
                 } else {
-				   } else if (fwNum >= 11.00 && fwNum <= 14.00) {
-                    msgs.innerHTML = "Installing Cache for FW " + fwVersion + "...";
-                    setTimeout(function() { window.location.replace("https://bigmegoo.github.io/14"); }, 500);
-                } else {
-				   } else if (fwNum >= 5.05 && fwNum <= 14.02) {
-                    msgs.innerHTML = "Installing Cache for FW " + fwVersion + "...";
-                    setTimeout(function() { window.location.replace("https://bigmegoo.github.io/1402"); }, 500);
-                } else {
-                    msgs.innerHTML = 'Unsupported Firmware: <span style="color: red;">' + fwVersion + '</span>';
-                    msgs.className = "status-text error";
-                }
-            } else {
+
                 if (fwNum == 5.05 || fwNum == 5.07) {
                     msgs.innerHTML = "Loading Exploit for FW " + fwVersion + "...";
                     var script = document.createElement('script');
