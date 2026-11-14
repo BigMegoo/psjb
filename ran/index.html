@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Big Megoo Gamer Zone 01003810764 - تعديل سوفت من 5.05-13.52</title>
+    <title>Big Megoo Gamer Zone 01003810764   تعدب من سوفت 5.05-14.00</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1 class="main-title">
-                <span class="name-Big Megoo">Big Megoo</span>
-                <span class="Gamer-title">Gamer</span>
-                <span class="Zone-title">Zone</span>
+            <span class="name-Big Megoo">Big Megoo</span>
+            <span class="Gamer-title">Gamer</span>
+            <span class="Zone-title">Zone</span>
             </h1>
             <div class="subtitle"> Ps4 Exploit Host</div>
-            <div class="version-badge">FW 5.05 - 14.02</div>
+            <div class="version-badge">FW 5.05 - 13.52</div>
         </header>
 
         <hr class="separator">
 
         <div class="status-bar">
-            <span id="msgs" class="status-text loading">⏳ Loading GoldHEN v2.4b18.14... Please Wait</span>
+            <span id="msgs" class="status-text loading">⏳ Loading GoldHEN v2.4b18.12... Please Wait</span>
         </div>
 
         <footer>
@@ -65,7 +65,10 @@
                     msgs.innerHTML = "Installing Cache for FW " + fwVersion + "...";
                     setTimeout(function() { window.location.replace("cacheslopkit.html"); }, 500);
                 } else {
-
+                    msgs.innerHTML = 'Unsupported Firmware: <span style="color: red;">' + fwVersion + '</span>';
+                    msgs.className = "status-text error";
+                }
+            } else {
                 if (fwNum == 5.05 || fwNum == 5.07) {
                     msgs.innerHTML = "Loading Exploit for FW " + fwVersion + "...";
                     var script = document.createElement('script');
